@@ -1,194 +1,101 @@
-System of a Down,Metallica
-System of a Down,Muse
-30 Seconds to Mars,Muse
-Placebo,Radiohead
-Placebo,Nirvana
-Placebo,Muse
-Placebo,The Killers
-Placebo,Coldplay
-MGMT,Muse
-MGMT,The Beatles
-MGMT,Arctic Monkeys
-Britney Spears,Lady Gaga
-Radiohead,Placebo
-Radiohead,Nirvana
-Radiohead,Muse
-Radiohead,Kings of Leon
-Radiohead,The Beatles
-Radiohead,David Bowie
-Radiohead,Arctic Monkeys
-Radiohead,The Smiths
-Radiohead,Pink Floyd
-Radiohead,The Killers
-Radiohead,Oasis
-Radiohead,The Cure
-Radiohead,Franz Ferdinand
-Radiohead,Pearl Jam
-Radiohead,Death Cab for Cutie
-Radiohead,Coldplay
-Radiohead,The Strokes
-Radiohead,Red Hot Chili Peppers
-Nirvana,Placebo
-Nirvana,Radiohead
-Nirvana,Muse
-Nirvana,The Beatles
-Nirvana,Arctic Monkeys
-Nirvana,Foo Fighters
-Nirvana,Oasis
-Nirvana,Pearl Jam
-Nirvana,Coldplay
-Nirvana,Red Hot Chili Peppers
-Lady Gaga,Britney Spears
-Lady Gaga,Rihanna
-Lady Gaga,Paramore
-Lady Gaga,Muse
-Lady Gaga,Lily Allen
-Lady Gaga,The Beatles
-Lady Gaga,Ke$ha
-Lady Gaga,Coldplay
-Metallica,System of a Down
-Metallica,Iron Maiden
-Metallica,Muse
-Rihanna,Lady Gaga
-Paramore,Lady Gaga
-Paramore,Muse
-Iron Maiden,Metallica
-Muse,System of a Down
-Muse,30 Seconds to Mars
-Muse,Placebo
-Muse,MGMT
-Muse,Radiohead
-Muse,Nirvana
-Muse,Lady Gaga
-Muse,Metallica
-Muse,Paramore
-Muse,Kings of Leon
-Muse,Snow Patrol
-Muse,The Beatles
-Muse,Arctic Monkeys
-Muse,Linkin Park
-Muse,Foo Fighters
-Muse,Green Day
-Muse,Pink Floyd
-Muse,The Killers
-Muse,Oasis
-Muse,The Cure
-Muse,Franz Ferdinand
-Muse,Queen
-Muse,Death Cab for Cutie
-Muse,Coldplay
-Muse,The Kooks
-Muse,The Strokes
-Muse,Red Hot Chili Peppers
-Kings of Leon,Radiohead
-Kings of Leon,Muse
-Kings of Leon,Arctic Monkeys
-Kings of Leon,The Killers
-Kings of Leon,Coldplay
-Snow Patrol,Muse
-Lily Allen,Lady Gaga
-The Beatles,MGMT
-The Beatles,Radiohead
-The Beatles,Nirvana
-The Beatles,Lady Gaga
-The Beatles,Muse
-The Beatles,David Bowie
-The Beatles,Arctic Monkeys
-The Beatles,The Smiths
-The Beatles,Pink Floyd
-The Beatles,The Killers
-The Beatles,Oasis
-The Beatles,The Rolling Stones
 The Beatles,Franz Ferdinand
-The Beatles,Led Zeppelin
-The Beatles,Queen
-The Beatles,Death Cab for Cutie
-The Beatles,Coldplay
-The Beatles,The Strokes
-The Beatles,Red Hot Chili Peppers
-David Bowie,Radiohead
-David Bowie,The Beatles
-Arctic Monkeys,MGMT
-Arctic Monkeys,Radiohead
-Arctic Monkeys,Nirvana
-Arctic Monkeys,Muse
-Arctic Monkeys,Kings of Leon
-Arctic Monkeys,The Beatles
-Arctic Monkeys,The Killers
-Arctic Monkeys,Oasis
-Arctic Monkeys,Franz Ferdinand
-Arctic Monkeys,Coldplay
-Arctic Monkeys,The Kooks
-Arctic Monkeys,The Strokes
-Linkin Park,Muse
-Foo Fighters,Nirvana
-Foo Fighters,Muse
-Foo Fighters,Red Hot Chili Peppers
-The Smiths,Radiohead
-The Smiths,The Beatles
-The Smiths,The Cure
-Green Day,Muse
-Pink Floyd,Radiohead
-Pink Floyd,Muse
-Pink Floyd,The Beatles
-Pink Floyd,Led Zeppelin
-The Killers,Placebo
-The Killers,Radiohead
-The Killers,Muse
-The Killers,Kings of Leon
-The Killers,The Beatles
-The Killers,Arctic Monkeys
-The Killers,Oasis
-The Killers,Coldplay
-The Killers,The Strokes
+Placebo,Coldplay
+Radiohead,The Smiths
+Muse,Green Day
+Muse,The Cure
+Lady Gaga,The Beatles
+Placebo,Radiohead
+30 Seconds to Mars,Muse
+Radiohead,Oasis
+Nirvana,The Beatles
+MGMT,The Beatles
 The Killers,Red Hot Chili Peppers
-Oasis,Radiohead
-Oasis,Nirvana
-Oasis,Muse
-Oasis,The Beatles
-Oasis,Arctic Monkeys
-Oasis,The Killers
+Radiohead,Death Cab for Cutie
+Lady Gaga,Ke$ha
+Radiohead,Arctic Monkeys
+Radiohead,Red Hot Chili Peppers
+The Beatles,The Strokes
+Muse,Red Hot Chili Peppers
+Nirvana,Muse
+Muse,Death Cab for Cutie
+The Killers,Oasis
 Oasis,Coldplay
-The Cure,Radiohead
-The Cure,Muse
-The Cure,The Smiths
-The Rolling Stones,The Beatles
-Franz Ferdinand,Radiohead
-Franz Ferdinand,Muse
-Franz Ferdinand,The Beatles
-Franz Ferdinand,Arctic Monkeys
-Led Zeppelin,The Beatles
-Led Zeppelin,Pink Floyd
-Ke$ha,Lady Gaga
-Queen,Muse
-Queen,The Beatles
-Pearl Jam,Radiohead
-Pearl Jam,Nirvana
-Death Cab for Cutie,Radiohead
-Death Cab for Cutie,Muse
-Death Cab for Cutie,The Beatles
-Coldplay,Placebo
-Coldplay,Radiohead
-Coldplay,Nirvana
-Coldplay,Lady Gaga
-Coldplay,Muse
-Coldplay,Kings of Leon
-Coldplay,The Beatles
-Coldplay,Arctic Monkeys
-Coldplay,The Killers
-Coldplay,Oasis
+Nirvana,Coldplay
+The Beatles,The Rolling Stones
+Radiohead,David Bowie
+The Beatles,Death Cab for Cutie
+Radiohead,The Cure
+Muse,Franz Ferdinand
+Arctic Monkeys,Oasis
+Muse,Kasabian
+Lady Gaga,Paramore
+The Beatles,Red Hot Chili Peppers
+Radiohead,The Beatles
+Muse,Queen
+Muse,The Killers
+Muse,Kings of Leon
+Foo Fighters,Red Hot Chili Peppers
+The Killers,Coldplay
+Muse,The Strokes
+Kings of Leon,The Killers
+The Beatles,Pink Floyd
+The Beatles,The Smiths
+Metallica,Muse
+Arctic Monkeys,The Killers
+The Beatles,Coldplay
+The Beatles,Arctic Monkeys
+Radiohead,Nirvana
+Metallica,Iron Maiden
+Arctic Monkeys,The Strokes
+Pink Floyd,Led Zeppelin
+Placebo,Muse
+Lady Gaga,Rihanna
+Radiohead,Muse
+Arctic Monkeys,Franz Ferdinand
+Nirvana,Pearl Jam
+Radiohead,Coldplay
+Britney Spears,Lady Gaga
+The Beatles,David Bowie
+The Beatles,The Killers
+Placebo,Nirvana
+Muse,Snow Patrol
+Kings of Leon,Coldplay
+Muse,Incubus
+Lady Gaga,Lily Allen
+The Smiths,The Cure
+Arctic Monkeys,Coldplay
+Radiohead,Foo Fighters
+Radiohead,The Strokes
+Lady Gaga,Muse
+System of a Down,Muse
+Paramore,Muse
+Nirvana,Red Hot Chili Peppers
+Radiohead,The Killers
+Radiohead,Franz Ferdinand
+Muse,The Beatles
+Muse,The Kooks
+The Beatles,Oasis
+System of a Down,Metallica
+Muse,Pink Floyd
+Muse,Arctic Monkeys
+Muse,Oasis
+Arctic Monkeys,The Kooks
+Muse,Linkin Park
+Placebo,The Killers
+Placebo,Arctic Monkeys
+Lady Gaga,Coldplay
+Nirvana,Foo Fighters
+Radiohead,Pearl Jam
+The Beatles,Led Zeppelin
+Muse,Coldplay
+Kings of Leon,Arctic Monkeys
+Nirvana,Oasis
+Radiohead,Pink Floyd
+Radiohead,Kings of Leon
 Coldplay,Red Hot Chili Peppers
-The Kooks,Muse
-The Kooks,Arctic Monkeys
-The Strokes,Radiohead
-The Strokes,Muse
-The Strokes,The Beatles
-The Strokes,Arctic Monkeys
-The Strokes,The Killers
-Red Hot Chili Peppers,Radiohead
-Red Hot Chili Peppers,Nirvana
-Red Hot Chili Peppers,Muse
-Red Hot Chili Peppers,The Beatles
-Red Hot Chili Peppers,Foo Fighters
-Red Hot Chili Peppers,The Killers
-Red Hot Chili Peppers,Coldplay
+Muse,Foo Fighters
+MGMT,Muse
+The Killers,The Strokes
+MGMT,Arctic Monkeys
+The Beatles,Queen
+Nirvana,Arctic Monkeys

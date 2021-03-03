@@ -2,6 +2,8 @@
   (:require [clojure.java.io :as io]
             [clojure.string :as cstr]))
 
+
+
 (defn get-source-string
   "source is a big string
   captured from the entire source file."
@@ -58,3 +60,78 @@
         candidate-pairs (extract-candidate-pairs essential-names)
         pairs-appearing-fifty-times (extract-pairs-appearing-fifty-times candidate-pairs lines)]
     pairs-appearing-fifty-times))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;; 2
+
+(defn get-source-string
+  "source is a big string
+  captured from the entire source file."
+  [source-file]
+  (-> source-file 
+      io/resource
+      io/file
+      slurp))
+
+(defn get-lines
+  "lines is the collection of line items.
+  each line has multiple names.
+  vectors within a vector."
+  [source-string]
+  (as-> source-string v
+    (cstr/split v #"\n")
+    (map #(cstr/split % #",") v)
+    ))
+
+(defn extract-candid-names [lines]
+  (->> lines
+       (apply concat)
+       frequencies
+       (filter #(<= 50 (val %)))
+       keys))
+
+(defn generate-pairs [names]
+  (distinct (for [a names b names
+                  :when (not= a b)]
+              #{a b})))
+
+(defn narrow-pairs [pairs lines threshold]
+  (keys
+   (filter
+    #(<= threshold (val %))
+    (apply
+     merge-with +
+     (filter
+      some?
+      (mapcat
+       (fn [line]
+         (map
+          (fn [pair]
+            (when (and (some #(= (first pair) %) line)
+                       (some #(= (second pair) %) line))
+              {pair 1}))
+          pairs))
+       lines))))))
+
+(defn process [source-file threshold]
+  (let [source-string (get-source-string source-file)
+        lines (get-lines source-string)
+        names (extract-candid-names lines)
+        pairs (generate-pairs names)
+        extracts (narrow-pairs pairs lines threshold)]
+    extracts))
