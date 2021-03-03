@@ -1,4 +1,4 @@
-(ns arena-challenge-clj.answer
+(ns arena-challenge-clj.a
   (:require [clojure.java.io :as io]
             [clojure.string :as cstr]))
 
