@@ -1,55 +1,31 @@
+(ns arena-challenge-clj.test
+  (:require [arena-challenge-clj.functions :refer :all]))
 
+;; check get-source-string function
+(= java.lang.String
+   (type (get-source-string "Artist_lists_small.txt")))
+;; => true
 
+;; check get-lines function 
+(= '(["U2" "Daft Punk" "Moby"] ["B.B.King" "DJ Shadow" "Moby"])
+   (get-lines "U2,Daft Punk,Moby\nB.B.King,DJ Shadow,Moby"))
+;; => true
 
-;;;;;;;
-(comment 
-  (def source-file "Artist_lists_small_tester.txt")
-  (def source-string (time (get-source-string source-file)))
-  )
+;; check extract-candid-names function
+;; using threshold number, 2 
+(= '("U2" "Moby")
+   (extract-candid-names [["U2" "Daft Punk" "Moby"]
+                          ["U2" "DJ Shadow" "Moby"]] 2))
+;; => true
 
+;; check generate-pairs function
+(= '(#{"Daft Punk" "U2"} #{"Moby" "U2"} #{"Moby" "Daft Punk"})
+   (generate-pairs ["U2" "Daft Punk" "Moby" "U2"]))
+;; => true
 
-(comment (def lines (time (get-lines source-string)))
-         (first lines)
-         (type lines)
-         )
-
-
-
-(def lines-sample (take 300 lines))
-(first lines-sample)
-(def names-sample (extract-candid-names lines-sample))
-(first names-sample)
-
-
-
-(def pairs-sample (generate-pairs names-sample))
-(first pairs-sample)
-
-
-lines-sample
-pairs-sample
-
-
-
-(keys
- (filter
-  #(<= 20 (val %))
-  (apply
-   merge-with +
-   (filter
-    some?
-    (mapcat
-     (fn [line]
-       (map
-        (fn [pair]
-          (when (and (some #(= (first pair) %) line)
-                     (some #(= (second pair) %) line))
-            {pair 1}))
-        pairs-sample))
-     lines-sample)
-    )
-   )))
-
-
-
-(count (narrow-pairs pairs-sample lines-sample 20))
+;; check narrow-pairs function 
+(= '(#{"Moby" "U2"})
+   (narrow-pairs '(#{"Daft Punk" "U2"} #{"Moby" "U2"} #{"Moby" "Daft Punk"})
+                 '(["Daft Punk" "U2" "Moby" "BTS"] ["Madonna" "U2" "Moby"])
+                 2))
+;; => true

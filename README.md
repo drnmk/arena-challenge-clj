@@ -1,22 +1,23 @@
 # arena-challenge-clj
+Written by Darren Kim for the coding challenge given by Owein on 3/2/2021.
 
-A Clojure library designed to ... well, that part is up to you.
+## how to run
+In the top directory of the project, please type in terminal:
+$ lein run 
 
-## Usage
+## input
+The given input file provided with the question is located in "resources" folder in the project directory.
 
-FIXME
+## output
+The output is generated into "output" folder in the name of "result.csv".
 
-## License
-
-Copyright © 2021 FIXME
-
-This program and the accompanying materials are made available under the
-terms of the Eclipse Public License 2.0 which is available at
-http://www.eclipse.org/legal/epl-2.0.
-
-This Source Code may also be made available under the following Secondary
-Licenses when the conditions for such availability set forth in the Eclipse
-Public License, v. 2.0 are satisfied: GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or (at your
-option) any later version, with the GNU Classpath Exception which is available
-at https://www.gnu.org/software/classpath/license.html.
+## file structur
+### core.clj
+Contains all static information including names of source-file/result-file and threshold number on the repetition condition.
+It triggers the pure functions and generate side effects.
+### function.clj
+Contains all pure functions used to solve the problem.
+Consists of five granular functions and one combining function.
+### test.clj
+Tests all granular functions.
+For review to be easy, it doens't follow unit testing convention but is written simple and casual. 
