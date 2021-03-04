@@ -13,7 +13,7 @@
 
 ;; check extract-candid-names function
 ;; using threshold number, 2 
-(= '("U2" "Moby")
+(= #{"U2" "Moby"}
    (extract-candid-names [["U2" "Daft Punk" "Moby"]
                           ["U2" "DJ Shadow" "Moby"]] 2))
 ;; => true
