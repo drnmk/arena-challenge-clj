@@ -25,7 +25,17 @@
 
 ;; check narrow-pairs function 
 (= '(#{"Moby" "U2"})
-   (narrow-pairs '(#{"Daft Punk" "U2"} #{"Moby" "U2"} #{"Moby" "Daft Punk"})
-                 '(["Daft Punk" "U2" "Moby" "BTS"] ["Madonna" "U2" "Moby"])
+   (narrow-pairs #{"Daft Punk" "U2" "Moby"}
+    '(["Daft Punk" "U2" "Moby" "BTS"] ["Madonna" "U2" "Moby"])
                  2))
 ;; => true
+(= '(#{:a :b})
+   (narrow-pairs #{:a :b :c} [[:a :b :d :e] [:a :b :d :e :g]] 2))
+;; => true
+
+;;(def threshold 50)
+;;(def source-string (get-source-string "Artist_lists_small.txt"))
+;;(def lines (get-lines source-string))
+;;(def names (extract-candid-names lines threshold))
+;; (type names)
+;;(def extracts (narrow-pairs names lines threshold))

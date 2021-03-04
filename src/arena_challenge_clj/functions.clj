@@ -35,7 +35,8 @@
        (apply concat)
        frequencies
        (filter #(<= threshold (val %)))
-       keys))
+       keys
+       set))
 
 (defn generate-pairs
   "using all names each of which appears more than
@@ -54,20 +55,16 @@
   counted number of appearances is its value.
   once the appeances are counted,
   the whole map gets merged by summing the counts."
-  [pairs lines threshold]
-  (keys
-   (filter #(<= threshold (val %))
-           (apply merge-with +
-                  (filter some?
-                          (mapcat
-                           (fn [line]
-                             (map
-                              (fn [pair]
-                                (when (and (some #(= (first pair) %) line)
-                                           (some #(= (second pair) %) line))
-                                  {pair 1}))
-                              pairs))
-                           lines))))))
+  [names lines threshold]
+  (->> lines 
+       (mapcat (fn [line]
+                 (->> line
+                      (filter names)
+                      generate-pairs
+                      (map (fn [pair] {pair 1})))))
+       (apply merge-with +)
+       (filter #(<= threshold (val %)))
+       keys))
 
 (defn process
   "this is a complete process cycle
@@ -78,6 +75,5 @@
   (let [source-string (get-source-string source-file)
         lines (get-lines source-string)
         names (extract-candid-names lines threshold)
-        pairs (generate-pairs names)
-        extracts (narrow-pairs pairs lines threshold)]
+        extracts (narrow-pairs names lines threshold)]
     extracts))
