@@ -50,19 +50,19 @@
   "using the candidate pairs, lines, and threshold,
   this function detects how many lines
   each candidate pair appears in.
-  map is used to calculate the number of appearances.
-  in other words, the pair itself is the key and
-  counted number of appearances is its value.
-  once the appeances are counted,
-  the whole map gets merged by summing the counts."
+  per each line, all possible names within the line
+  gets filtered and then counted by frequencies function.
+  the result is map by frequencies function,
+  which gets filtered for threshold later.
+  finally, only keys are picked
+  so the outcome is just set of pairs."
   [names lines threshold]
   (->> lines 
        (mapcat (fn [line]
                  (->> line
                       (filter names)
-                      generate-pairs
-                      (map (fn [pair] {pair 1})))))
-       (apply merge-with +)
+                      generate-pairs)))
+       frequencies       
        (filter #(<= threshold (val %)))
        keys))
 
